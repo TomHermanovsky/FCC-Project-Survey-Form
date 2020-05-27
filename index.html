@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title">Lockdown Fitness Survey Form</h1>
+      <p id="description">Please contribute to our fitness-focused research by filling out following survey.</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-div">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" class="input" placeholder="What is your name?" required>
+      </div>
+      <div class="form-div">
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" name="email" class="input" placeholder="Please provide your email address" required>
+      </div>
+      <div class="form-div">
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="gender" value="female">Female</input><br>
+        <input type="radio" name="gender" id="gender" value="male">Male</input><br>
+        <input type="radio" name="gender" id="gender" value="other">Other</input><br>
+        <input type="radio" name="gender" id="gender" value="prefer not to say">Prefer not to say</input><br>
+      </div>
+      <div class="form-div">
+        <label for="age" id="number-label">Age</label><br>
+        <input type="number" min="0" max="100" id="number" name="age" class="input" placeholder="Please enter your age" required>
+      </div>
+      <div class="form-div">
+        <label for="activity-volume">How many hours of exercise per week do you do during lock-down?</label>
+        <select name="activity volume" id="dropdown" class="input">
+          <option value="0-3 Hours">0-3 Hours per week</option>
+          <option value="4-7">4-7 Hours per week</option>
+          <option value="8-12">8-12 Hours per week</option>
+          <option value="13-16">13-16 Hours per week</option>
+          <option value="17+ Hours">More than 17 Hours per week</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <label for="activity-type">What activities do you do during lockdown?<br> <em>Please choose all relevant options</em></label><br>
+        <input type="checkbox" name="activity-type" value="Cycling">Cycling<br>
+        <input type="checkbox" name="activity-type" value="Cycling - indoor trainer">Cycling - indoor trainer<br>
+        <input type="checkbox" name="activity-type" value="Running">Running<br>
+        <input type="checkbox" name="activity-type" value="Running - indoor treadmill">Running - indoor treadmill<br>
+        <input type="checkbox" name="activity-type" value="Yoga">Yoga<br>
+        <input type="checkbox" name="activity-type" value="Body-weight training">Body-weight training<br>
+        <input type="checkbox" name="activity-type" value="Strength training with equipment">Strength training with equipment<br>
+        <input type="checkbox" name="activity-type" value="Other">Other<br>
+      </div>
+      <div class="form-div">
+        <label for="difference">How did your physical activities change because of the lockdown?</label> <br>
+        <input type="radio" name="difference" value="decreased">Decreased</input><br>
+        <input type="radio" name="difference" value="did not change">Did not change</input><br>
+        <input type="radio" name="difference" value="increased">Increased</input><br>
+      </div>
+      <div class="form-div">
+        <p><strong>Please describe how has the lockdown changed your attitude/motivation towards physical exercise<strong></p>
+        <textarea name="additional info" class="textarea" id="additional info" placeholder="Please provide additional information here..."></textarea>
+      </div>
+      <div class="form-div">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
