@@ -81,3 +81,7 @@ button {
   line-height: inherit;
   background: #FFF8DC;
 }
+
+button:hover {
+  cursor: pointer;
+}
